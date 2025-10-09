@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/*CSS FILES*/
+@import "./css/global.css";
+@import "./css/fonts.css";
+
+/* BODY */
+body {
+  font-family: "Nunito";
+  color: #f2f1ed;
+  user-select: none;
+  @apply bg-gradient-to-b from-black via-gray-900 to-black;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  transition: 0.3s all;
+}
+
+.active {
+  @apply text-[#74070e];
+}
+
+/* NAVBAR */
+.header {
+  @apply mt-14 mb-8;
+}
+
+.navbar__title {
+  @apply navbar-start text-4xl;
+}
+
+.navbar__pages {
+  @apply flex items-center gap-7 mt-16;
+}
+.mn {
+  @apply p-8;
+}
+/* HOME SECTION */
+.home {
+  @apply flex flex-col items-center  text-center;
+}
+
+.home__welcome {
+  @apply text-7xl mb-12 mt-36;
+}
+
+.home__title {
+  @apply text-9xl mb-14;
+}
+.home__desc {
+  @apply mb-12;
+}
+.buttons {
+  @apply mb-12;
+}
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .home__welcome {
+    @apply text-3xl mb-8;
+  }
+  .home__title {
+    @apply text-5xl mb-10;
+  }
+  .home ul {
+    @apply gap-6 text-4xl;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .home__welcome {
+    @apply text-5xl mb-10;
+  }
+  .home__title {
+    @apply text-7xl mb-12;
+  }
+  .home ul {
+    @apply gap-10 text-5xl;
+  }
+}
+
+@media (min-width: 1025px) {
+  .home__welcome {
+    @apply text-7xl mb-12;
+  }
+  .home__title {
+    @apply text-9xl mb-14;
+  }
+  .home ul {
+    @apply gap-16 text-7xl;
+  }
+}
