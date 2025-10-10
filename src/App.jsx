@@ -2,7 +2,6 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import { Home, Skills, Projects } from "./pages";
-import Contact from "./pages/Contact";
 
 function App() {
   const routes = createBrowserRouter([
