@@ -14,7 +14,7 @@ html {
 
 html,
 body {
-  @apply bg-gradient-to-b from-black via-gray-900 to-black;
+  @apply bg-gradient-to-b from-black via-gray-900 to-black text-[#fff];
 }
 #root {
   height: 100%;
