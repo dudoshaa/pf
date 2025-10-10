@@ -210,7 +210,7 @@ export default function Projects() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="flex flex-col items-center justify-center text-gray-500 border border-[#2a0a09] rounded-3xl bg-[#0b0b0b]/40 p-10"
+              className="flex flex-col items-center justify-start text-gray-500 border border-[#2a0a09] rounded-3xl bg-[#0b0b0b]/40 p-10"
             >
               <p className="text-lg mb-2">🖱 Click a project</p>
               <p className="text-sm text-gray-400">
