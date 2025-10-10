@@ -2,16 +2,11 @@
 @plugin "daisyui";
 
 /*CSS FILES*/
-@import "./css/global.css";
+
 @import "./css/fonts.css";
+@import "./css/global.css";
 
 /* BODY */
-body {
-  font-family: "Nunito";
-  color: #f2f1ed;
-  user-select: none;
-  @apply bg-gradient-to-b from-black via-gray-900 to-black;
-}
 
 /* CONTAINER */
 .container {
@@ -38,12 +33,12 @@ body {
 }
 
 .navbar__pages {
-  @apply flex items-center gap-7 mt-16;
+  @apply flex items-center gap-7;
 }
 .mn {
   @apply p-8;
 }
-/* HOME SECTION */
+/* HOME  */
 .home {
   @apply flex flex-col items-center  text-center;
 }
@@ -60,6 +55,29 @@ body {
 }
 .buttons {
   @apply mb-12;
+}
+.contact {
+  @apply px-6 py-2;
+}
+/*Projects*/
+.projects__title {
+  @apply mb-6;
+}
+.projects__desc {
+  @apply mb-10;
+}
+.pr {
+  @apply p-5;
+}
+/*Projects*/
+.crd {
+  @apply p-7;
+}
+.crd__title {
+  @apply mb-3;
+}
+.butn {
+  @apply px-4 py-2 mb-5;
 }
 /* RESPONSIVE */
 @media (max-width: 640px) {

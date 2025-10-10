@@ -11,6 +11,11 @@ html {
   scroll-behavior: smooth;
   height: 100%;
 }
+
+html,
+body {
+  @apply bg-gradient-to-b from-black via-gray-900 to-black;
+}
 #root {
   height: 100%;
   display: flex;
@@ -30,8 +35,6 @@ img {
 }
 body {
   font-size: 62.5%;
-  height: 100%;
-
 }
 main {
   flex-grow: 1;

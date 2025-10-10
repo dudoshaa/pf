@@ -19,16 +19,17 @@ function Home() {
         </motion.h2>
 
         <motion.h1
-          className="home__title leading-tight mt-6 text-4xl sm:text-6xl md:text-7xl lg:text-9xl"
+          className="home__title leading-tight mt-6 text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white text-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          I'm a{" "}
-          <strong className="block sm:inline text-[#838f6f] mt-4 sm:mt-0">
+          I'm <span>Durdona Burkhonova</span>
+          <br className="hidden sm:block" />
+          <strong className="block sm:inline text-[#838f6f] mt-2 sm:mt-0">
             <ReactTyped
               strings={[
-                "Front-end Developer 👩🏻‍💻",
+                "Front-End Developer 👩🏻‍💻",
                 "React Developer ⚛️",
                 "Web Designer ✨",
               ]}
@@ -49,7 +50,7 @@ function Home() {
           front-end tools such as{" "}
           <span className="text-[#74070e] font-semibold">React</span>,{" "}
           <span className="text-[#74070e] font-semibold">Tailwind CSS,</span>
-          <span className="text-[#74070e] font-semibold">TypeScript,</span>{" "}
+          <span className="text-[#74070e] font-semibold">TypeScript</span>{" "}
           <span>and</span>{" "}
           <span className="text-[#74070e] font-semibold">JavaScript</span>. I
           focus on performance, accessibility, and clean design.
@@ -62,8 +63,8 @@ function Home() {
           transition={{ delay: 1, duration: 0.7 }}
         >
           <a
-            href="#contact"
-            className="px-6 sm:px-8 py-2 sm:py-3 border border-[#74070e] text-2xl sm:text-3xl md:text-4xl rounded-full hover:bg-[#74070e] hover:text-white transition duration-300"
+            href="https://t.me/bxdurdona"
+            className="contact sm:px-8 py-2 sm:py-3 border border-[#74070e] text-2xl sm:text-3xl md:text-4xl rounded-full hover:bg-[#74070e] hover:text-white transition duration-300"
           >
             Contact Me
           </a>
