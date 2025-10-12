@@ -7,7 +7,9 @@
 @import "./css/global.css";
 
 /* BODY */
-
+body {
+  font-family: "Nunito";
+}
 /* CONTAINER */
 .container {
   width: 100%;
