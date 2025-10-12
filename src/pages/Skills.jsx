@@ -20,8 +20,8 @@ import {
 const skills = [
   { icon: <FaHtml5 />, name: "HTML", color: "#E44D26", level: 95 },
   { icon: <FaCss3Alt />, name: "CSS", color: "#264DE4", level: 90 },
-  { icon: <FaJs />, name: "JavaScript", color: "#F7DF1E", level: 85 },
-  { icon: <FaReact />, name: "React", color: "#61DAFB", level: 80 },
+  { icon: <FaJs />, name: "JavaScript", color: "#F7DF1E", level: 75 },
+  { icon: <FaReact />, name: "React", color: "#61DAFB", level: 90 },
   { icon: <SiTailwindcss />, name: "Tailwind", color: "#38BDF8", level: 75 },
   { icon: <SiRedux />, name: "Redux Toolkit", color: "#764ABC", level: 70 },
   {
