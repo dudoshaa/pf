@@ -1,93 +1,10 @@
-import React from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-
-const projects = [
-  {
-    id: 0,
-    title: "Music Player",
-    tags: ["HTML", "JavaScript", "CSS", "Responsive"],
-    desc: "A modern, responsive music player with waveform animation, volume, and speed control.",
-    color: "#DCE8F2",
-    github: "https://github.com/dudoshaa/player",
-    live: "https://player-alpha-two.vercel.app/",
-    image: "../images/music.png",
-  },
-  {
-    id: 0.1,
-    title: "DGroup",
-    tags: ["React", "Firebase", "Redux Toolkit", "Responsive"],
-    desc: "A real-time chat app (still in progress) where users can log in, chat, and see who’s online — powered by Firebase.",
-    color: "#DCE8F2",
-    github: "https://github.com/dudoshaa/sign",
-    live: "https://sign-rust-eight.vercel.app/",
-    image: "../images/login.png",
-  },
-  {
-    id: 2,
-    title: "Todo",
-    tags: ["HTML", "TypeScript", "CSS", "Responsive"],
-    desc: "A clean, responsive task manager with drag-and-drop reordering, filtering, and dark/light theme support.",
-    color: "#F3D3D3",
-    github: "https://github.com/dudoshaa/todo",
-    live: "https://todo-rosy-iota.vercel.app/",
-    image: "../images/todo.png",
-  },
-  {
-    id: 0.2,
-    title: "Rock–Paper–Scissors",
-    tags: ["HTML", "JavaScript", "CSS", "Responsive"],
-    desc: "A simple and interactive Rock–Paper–Scissors game built with Vanilla JavaScript, where users play against the computer with real-time score updates and smooth animations.",
-    color: "#F3D3D3",
-    github: "https://github.com/dudoshaa/don-don-ziiki",
-    live: "https://don-don-ziiki.vercel.app/",
-    image: "../images/game.png",
-  },
-  {
-    id: 1,
-    title: "Healthy Recipe Finder",
-    tags: ["React", "API", "Web Designer", "Responsive"],
-    desc: "Find healthy recipes using live API search and calorie filter.",
-    color: "#DCE8F2",
-    github: "https://github.com/dudoshaa/healthy",
-    live: "https://healthy-umber.vercel.app/",
-    image: "../images/healthy.png",
-  },
-
-  {
-    id: 3,
-    title: "Dev Finder",
-    tags: ["HTML", "TypeScript", "CSS", "Responsive"],
-    desc: "A sleek GitHub user lookup tool with smooth UI and real-time search.",
-    color: "#F3D3D3",
-    github: "https://github.com/dudoshaa/devfinder",
-    live: "https://devfinder-liard.vercel.app/",
-    image: "../images/finder.png",
-  },
-  {
-    id: 4,
-    title: "Search Image",
-    tags: ["React", "JavaScript", "CSS", "Responsive"],
-    desc: "A sleek image search app where users can browse and filter images in real time.",
-    color: "#F3D3D3",
-    github: "https://github.com/dudoshaa/searchimg",
-    live: "https://searchimg-eight.vercel.app/",
-    image: "../images/search.png",
-  },
-  {
-    id: 5,
-    title: "Desserts",
-    tags: ["React", "Redux Toolkit", "CSS", "JavaScript", "Responsive"],
-    desc: "A responsive recipe app showcasing a variety of delicious desserts with an elegant interface.",
-    color: "#F3D3D3",
-    github: "https://github.com/dudoshaa/1dars",
-    live: "https://1dars-five.vercel.app/",
-    image: "../images/desserts.png",
-  },
-];
+import { projects } from "../../data";
 
 export default function Projects() {
-  const [active, setActive] = React.useState(null);
+  const [active, setActive] = useState(null);
 
   return (
     <section className="container py-20 text-gray-100 min-h-screen">
